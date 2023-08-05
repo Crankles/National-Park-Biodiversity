@@ -22,6 +22,14 @@ An analysis into `species_info.csv` and `observations.csv` where:
 | park name | Name of US National Park species observations took place |
 | observations | Number of obseravtions of a given species across a one week period |
 
+Specifically to answer the following questions:
+- What is the distribution of conservation status for animals?
+- Are certain types of species more likely to be endangered?
+- Are the differences between species and their conservation status significant?
+- Which species were spotted the most at each park?
+
+---
+
 Before deeper analysis takes place, the data is explored using exploratory data analysis with the data in `species_info.csv` being looked at first. Here duplicated `scientific_name` rows were found.
 
 Then `observations.csv` is explored again using EDA techniques, again with duplicate entries found.
@@ -32,12 +40,7 @@ Duplications in `species_info.csv` fell into two categories depending on which c
 - Common names: In this case, the rows shared all the same information except the common names. The corresdonding rows were combined and common names collected together.
 - Conservation Status: Without more information, it is impossible to ascertain why such duplications occured. It could be that a given species has a different status across each park. Without more information, these such duplications were left as is.
 
-TODO 
-
-What is the distribution of conservation status for animals?
-Are certain types of species more likely to be endangered?
-Are the differences between species and their conservation status significant?
-Which species were spotted the most at each park?
+With the data being explored, the posited questions are answered in order. This is done through a mixture of visually and via tabulation.
 
 ---
 ### Dependencies
